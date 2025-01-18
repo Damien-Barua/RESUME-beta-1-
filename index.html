@@ -1,0 +1,423 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Web Developer + UX Designer
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #0d0d0d;
+            color: #ffffff;
+        }
+        .service-button {
+            transition: all 0.3s ease;
+            background: transparent;
+            border: 2px solid white;
+        }
+        .service-button:hover {
+            background: linear-gradient(90deg, #6a0dad, #000000);
+            transform: scale(1.05);
+        }
+        .hover-expand {
+            transition: all 0.3s ease;
+            background: transparent;
+            border: 2px solid white;
+        }
+        .hover-expand:hover {
+            background: linear-gradient(90deg, #6a0dad, #000000);
+            transform: scale(1.05);
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            transform: scale(1.05);
+        }
+        .project-button {
+            transition: all 0.3s ease;
+            background: transparent;
+            border: 2px solid white;
+            display: block;
+            text-align: left;
+        }
+        .project-button:hover {
+            background: linear-gradient(90deg, #6a0dad, #000000);
+            transform: scale(1.05);
+        }
+        .blog-button {
+            transition: all 0.3s ease;
+            background: transparent;
+            border: 2px solid white;
+            display: block;
+            text-align: left;
+        }
+        .blog-button:hover {
+            background: linear-gradient(90deg, #6a0dad, #000000);
+            transform: scale(1.05);
+        }
+  </style>
+ </head>
+ <body class="bg-black text-white">
+  <header class="bg-black py-6">
+   <div class="container mx-auto flex justify-between items-center px-4">
+    <div class="text-2xl font-bold">
+        <img src="WhatsApp Image 2025-01-18 at 11.42.43.jpeg" alt="Vector Art Image" width="50" />
+    </div>
+    <nav class="space-x-4">
+     <a class="nav-link hover:text-purple-500" href="#">
+      Home
+     </a>
+     <a class="nav-link hover:text-purple-500" href="#">
+      About
+     </a>
+     <a class="nav-link hover:text-purple-500" href="#" onclick="document.getElementById('services-section').scrollIntoView({ behavior: 'smooth' });">
+      Services
+     </a>
+     <a class="nav-link hover:text-purple-500" href="#" onclick="document.getElementById('portfolio-section').scrollIntoView({ behavior: 'smooth' });">
+      Portfolio
+     </a>
+     <a class="nav-link hover:text-purple-500" href="#" onclick="document.getElementById('blog-section').scrollIntoView({ behavior: 'smooth' });">
+      Blog
+     </a>
+     <a class="nav-link hover:text-purple-500" href="#" onclick="document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' });">
+      Contact
+     </a>
+    </nav>
+   </div>
+  </header>
+  <section class="container mx-auto px-4 py-12" id="capture">
+   <div class="flex flex-col md:flex-row items-center">
+    <div class="md:w-1/2">
+     <h1 class="text-4xl font-bold mb-4">
+      I am Niyor Barua
+     </h1>
+     <h2 class="text-4xl font-bold mb-4">
+       <span class="text-purple-500 bg-gradient-to-r from-purple-500 to-white text-transparent bg-clip-text">
+      Frontend Developer
+      <br/>
+      <span class="text-purple-500 bg-gradient-to-r from-purple-500 to-white text-transparent bg-clip-text">
+       UI/UX Designer
+      </span>
+     </h2>
+     <p class="mb-4">
+      I work closely with clients to solve their problems through innovative and creative solutions.
+     </p>
+     <div class="flex space-x-4 mb-4">
+      <span class="text-2xl font-bold">
+       6
+      </span>
+      <span>
+       Projects
+      </span>
+      <span class="text-2xl font-bold">
+       25+
+      </span>
+      <span>
+       Clients
+      </span>
+      <span class="text-2xl font-bold">
+       491
+      </span>
+      <span>
+       Followers
+      </span>
+      <span class="text-2xl font-bold">
+       3
+      </span>
+      <span>
+       Achievements
+      </span>
+     </div>
+     <div class="flex space-x-4">
+      <a class="hover-expand text-white py-2 px-4 rounded" href="#" onclick="downloadImage()">
+       Download CV
+      </a>
+      <a class="hover-expand text-white py-2 px-4 rounded" href="#" onclick="document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' });">
+       Contact Me
+      </a>
+     </div>
+    </div>
+    <div class="md:w-1/2 mt-8 md:mt-0">
+     <img alt="Portrait of Gerold" class="mx-auto" height="400" src="WhatsApp Image 2024-11-29 at 20.18.26.jpeg" width="400"/>
+    </div>
+   </div>
+  </section>
+  <section class="bg-black py-12" id="services-section">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-4">
+     My Quality Services
+    </h2>
+    <p class="mb-8">
+     Here are some of the services I offer to my clients. I ensure high quality and satisfaction in every project I undertake.
+    </p>
+    <div class="bg-gray-800 p-6 rounded-lg">
+     <div class="mb-4">
+      <button class="service-button text-xl font-bold text-white py-2 px-4 rounded-lg w-full text-left" onclick="document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' });">
+       Branding Design
+       <p class="mt-2 text-white">
+        Creating unique and memorable branding solutions for businesses.
+       </p>
+      </button>
+     </div>
+     <div class="mb-4">
+      <button class="service-button text-xl font-bold text-white py-2 px-4 rounded-lg w-full text-left" onclick="document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' });">
+       UI/UX Design
+       <p class="mt-2 text-white">
+        Designing user-friendly and aesthetically pleasing interfaces.
+       </p>
+      </button>
+     </div>
+     <div class="mb-4">
+      <button class="service-button text-xl font-bold text-white py-2 px-4 rounded-lg w-full text-left" onclick="document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' });">
+       Web Design
+       <p class="mt-2 text-white">
+        Developing responsive and modern websites.
+       </p>
+      </button>
+     </div>
+     <div>
+      <button class="service-button text-xl font-bold text-white py-2 px-4 rounded-lg w-full text-left" onclick="document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' });">
+       App Design
+       <p class="mt-2 text-white">
+        Creating intuitive and engaging mobile applications.
+       </p>
+      </button>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="bg-black py-12" id="portfolio-section">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-4">
+     My Recent Works
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+     <button class="project-button bg-gray-800 p-6 rounded-lg" onclick="window.open('https://damien-barua.github.io/NEBULANAV/', '_blank')">
+      <img alt="Project 1" class="mb-4 rounded-lg" height="400" src="WhatsApp Image 2024-12-28 at 11.27.02.jpeg" width="800"/>
+      <h3 class="text-xl font-bold">
+       N.E.B.U.L.A.N.A.V.
+      </h3>
+      <p>
+        NebulaNav is an innovative web-based real-time spacecraft simulation platform designed to explore the challenges of space navigation and decision-making. Combining advanced 3D rendering, physics simulations, and AI-powered autonomous decision-making, NebulaNav allows users to pilot spacecraft, manage resources, and navigate through dynamic space environments. Built for accessibility, it offers a responsive and immersive experience, even on low-end devices, empowering students, enthusiasts, and researchers to engage with space exploration like never before.
+      </p>
+     </button>
+     <button class="project-button bg-gray-800 p-6 rounded-lg" onclick="window.open('https://damien-barua.github.io/GDG-HAHHAHAHA/', '_blank')">
+      <img alt="Project 2" class="mb-4 rounded-lg" height="400" src="Screenshot 2025-01-18 102335.jpg" width="800"/>
+      <h3 class="text-xl font-bold">
+        Endless Discovery(Google Developer Group Project's Landing Page)
+      </h3>
+      <p>
+        The GDG (Google Developer Group) community thrives on a spirit of endless discovery. Here, projects are more than code—they’re journeys fueled by curiosity, collaboration, and a passion for solving real-world challenges. Each project display offers a glimpse into the diverse ideas and breakthroughs crafted by developers, designers, and tech enthusiasts from all backgrounds.
+      </p>
+     </button>
+     <button class="project-button bg-gray-800 p-6 rounded-lg" onclick="window.open('https://github.com/harshDhiman3344/VIBE-SIH', '_blank')">
+      <img alt="Project 3" class="mb-4 rounded-lg" height="400" src="Screenshot 2025-01-18 103408.jpg" width="800"/>
+      <h3 class="text-xl font-bold">
+       V.I.B.E.(Vacation Itinerary Based on Emotions)
+      </h3>
+      <p>
+        VIBE- A web-based
+
+        platform that recommends personalized travel destinations, accommodations, and activities based on users' emotional states and preferences. The system will leverage NLP to understand user inputs and ML algorithms to provide tailored suggestions by integrating data from various travel APIs.
+      </p>
+     </button>
+     <button class="project-button bg-gray-800 p-6 rounded-lg" onclick="window.open('https://damien-barua.github.io/HEHEHA/', '_blank')">
+      <img alt="Project 4" class="mb-4 rounded-lg" height="400" src="Screenshot 2025-01-18 103600.jpg" width="800"/>
+      <h3 class="text-xl font-bold">
+       Google Developer Group Frontpage/Landing Page
+      </h3>
+      <p>
+        This site is a quirky haven for tech enthusiasts and Googlers alike. Dive into a world where creativity meets technology. Explore, learn, and grow with us as we embark on this exciting journey together. Click "Learn more" to start your adventure!
+      </p>
+     </button>
+    </div>
+   </div>
+  </section>
+  <section class="bg-black py-12">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-4">
+     My Skills
+    </h2>
+    <div class="flex flex-wrap space-x-4">
+     <div class="bg-gray-800 p-6 rounded-lg mb-4">
+      <i class="fab fa-html5 text-4xl mb-2">
+      </i>
+      <p>
+       HTML
+      </p>
+     </div>
+     <div class="bg-gray-800 p-6 rounded-lg mb-4">
+      <i class="fab fa-css3-alt text-4xl mb-2">
+      </i>
+      <p>
+       CSS
+      </p>
+     </div>
+     <div class="bg-gray-800 p-6 rounded-lg mb-4">
+      <i class="fab fa-js text-4xl mb-2">
+      </i>
+      <p>
+       JavaScript
+      </p>
+     </div>
+     <div class="bg-gray-800 p-6 rounded-lg mb-4">
+      <i class="fab fa-react text-4xl mb-2">
+      </i>
+      <p>
+       React
+      </p>
+     </div>
+     <div class="bg-gray-800 p-6 rounded-lg mb-4">
+      <i class="fab fa-node text-4xl mb-2">
+      </i>
+      <p>
+       Node.js
+      </p>
+     </div>
+     <div class="bg-gray-800 p-6 rounded-lg mb-4">
+      <i class="fab fa-wordpress text-4xl mb-2">
+      </i>
+      <p>
+       WordPress
+      </p>
+     </div>
+     <div class="bg-gray-800 p-6 rounded-lg mb-4">
+      <i class="fab fa-git-alt text-4xl mb-2">
+      </i>
+      <p>
+       Git
+      </p>
+     </div>
+     <div class="bg-gray-800 p-6 rounded-lg mb-4">
+      <i class="fab fa-figma text-4xl mb-2">
+      </i>
+      <p>
+       Figma
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="bg-black py-12">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-4">
+     My Client's Stories
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+     <div class="bg-gray-800 p-6 rounded-lg">
+      <p>
+       "Niyor is an exceptional developer and designer. He delivered high-quality work on time and exceeded our expectations."
+      </p>
+      <p class="mt-4 font-bold">
+       - Sneha Singh
+      </p>
+     </div>
+     <div class="bg-gray-800 p-6 rounded-lg">
+      <p>
+       "Working with Niyor was a pleasure. His creativity and attention to detail are unmatched."
+      </p>
+      <p class="mt-4 font-bold">
+       - Harsh Dhiman
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="bg-black py-12" id="blog-section">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-4">
+     My Linkedin Posts
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+     <button class="blog-button bg-gray-800 p-6 rounded-lg">
+      <img alt="Blog 1" class="mb-4 rounded-lg" height="300" src="WhatsApp Image 2024-12-20 at 21.22.50.jpeg" width="600"/>
+      <h3 class="text-xl font-bold">
+       IITD GAME DEV COURSE
+      </h3>
+      <p>
+        Thrilled to share that I completed a game development short course at IIT Delhi on March 31st!
+      </p>
+     </button>
+     <button class="blog-button bg-gray-800 p-6 rounded-lg">
+      <img alt="Blog 2" class="mb-4 rounded-lg" height="300" src="WhatsApp Image 2025-01-18 at 11.19.14.jpeg" width="600"/>
+      <h3 class="text-xl font-bold">
+       Hackathon At IIITD
+      </h3>
+      <p>
+        Proud to share my achievements from the August 2024 hackathon at IIITD! 
+      </p>
+     </button>
+     <button class="blog-button bg-gray-800 p-6 rounded-lg">
+      <img alt="Blog 3" class="mb-4 rounded-lg" height="300" src="WhatsApp Image 2025-01-18 at 11.21.08.jpeg" width="600"/>
+      <h3 class="text-xl font-bold">
+       Designathon At BVPCOE
+      </h3>
+      <p>
+        Excited to share my achievements from the designathon at BVPCOE!
+      </p>
+     </button>
+    </div>
+   </div>
+  </section>
+  <section class="bg-black py-12" id="contact-section">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-4">
+     Let's work together!
+    </h2>
+    <form class="bg-gray-800 p-6 rounded-lg">
+     <div class="mb-4">
+      <label class="block text-sm font-bold mb-2" for="name">
+       Name
+      </label>
+      <input class="w-full p-2 rounded bg-gray-700 text-white" id="name" type="text"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-sm font-bold mb-2" for="email">
+       Email
+      </label>
+      <input class="w-full p-2 rounded bg-gray-700 text-white" id="email" type="email"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-sm font-bold mb-2" for="message">
+       Message
+      </label>
+      <textarea class="w-full p-2 rounded bg-gray-700 text-white" id="message"></textarea>
+     </div>
+     <div class="mb-4">
+      <label class="block text-sm font-bold mb-2" for="additional-info">
+       Additional Info
+      </label>
+      <textarea class="w-full p-2 rounded bg-gray-700 text-white" id="additional-info"></textarea>
+     </div>
+     <button class="hover-expand text-white py-2 px-4 rounded" type="submit">
+      Send Message
+     </button>
+    </form>
+   </div>
+  </section>
+  <footer class="bg-black py-6">
+   <div class="container mx-auto px-4 text-center">
+    <p>
+     © 2025 Niyor Barua. All rights reserved.
+    </p>
+   </div>
+  </footer>
+  <script>
+   function downloadImage() {
+            html2canvas(document.body).then(canvas => {
+                let link = document.createElement('a');
+                link.download = 'website_screenshot.jpg';
+                link.href = canvas.toDataURL("image/jpeg");
+                link.click();
+            });
+        }
+  </script>
+ </body>
+</html>
