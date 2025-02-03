@@ -411,13 +411,17 @@
   </footer>
   <script>
    function downloadImage() {
-            html2canvas(document.body).then(canvas => {
-                let link = document.createElement('a');
-                link.download = 'website_screenshot.jpg';
-                link.href = canvas.toDataURL("image/jpeg");
-                link.click();
-            });
-        }
+    // Define the target URL
+    const targetUrl = 'https://damien-barua.github.io/RESUME-beta-1-/';
+    
+    // Show a confirmation dialog to the user
+    const userConfirmed = confirm(`You might paste this link: ${targetUrl} on the redirected website to download the image of the CV. Do you want to continue?`);
+
+    // If the user confirms, redirect to the specified URL
+    if (userConfirmed) {
+        window.location.href = 'https://www.web2pdfconvert.com/to/img/';
+    }
+}
   </script>
  </body>
 </html>
